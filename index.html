@@ -8,20 +8,26 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="container d-flex flex-row justify-content-between align-items-center p-4">
+    <header class="container d-flex flex-row justify-content-between align-items-center p-4 gap-4 wraping">
         <div class="logo-img"><img class="w-100" src="assets/images/logo.jpg" alt=""></div>
-        <div>
+        <nav class="d-none d-lg-inline-block">
             <ul class="list-unstyled d-flex flex-row align-items-center justify-content-center gap-4">
-                <li><a class="text-decoration-none text-dark" href="assets/images/home-logo.png"></a></li>
+                <li><a class="text-decoration-none text-dark" href=""><img src="assets/images/home-logo.png" alt="" style="width: 2rem;"></a></li>
                 <li><a class="text-decoration-none text-dark" href="">اخبار</a></li>
                 <li><a class="text-decoration-none text-dark" href="">چند رسانه ای</a></li>
                 <li><a class="text-decoration-none text-dark" href="">گزارش اماری</a></li>
-                <li><button class="btn btn-danger"><span>#</span>تلوزیون اینترنتی کتاب</button></li>
+                <li><button class="btn btn-danger">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-collection-play-fill" viewBox="0 0 16 16">
+                        <path d="M2.5 3.5a.5.5 0 0 1 0-1h11a.5.5 0 0 1 0 1zm2-2a.5.5 0 0 1 0-1h7a.5.5 0 0 1 0 1zM0 13a1.5 1.5 0 0 0 1.5 1.5h13A1.5 1.5 0 0 0 16 13V6a1.5 1.5 0 0 0-1.5-1.5h-13A1.5 1.5 0 0 0 0 6zm6.258-6.437a.5.5 0 0 1 .507.013l4 2.5a.5.5 0 0 1 0 .848l-4 2.5A.5.5 0 0 1 6 12V7a.5.5 0 0 1 .258-.437"/>
+                        </svg>
+                    </span>
+                    تلوزیون اینترنتی کتاب</button></li>
                 <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <a class="nav-link dropdown-toggle" href="" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
           درباره ما
         </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+        <div class="dropdown-menu">
           <a class="dropdown-item" href="#">معرفی موسسه</a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="#">هیات امنا</a>
@@ -31,15 +37,54 @@
       </li>
                 
             </ul>
-        </div>
+        </nav>
+
+<div class="d-inline-block d-lg-none">
+         <!-- Button trigger modal -->
+<button style="border: 2px solid #757575; color: #757575; background-color: #f1efef; border-radius: 5px;" type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    <span>
+        <svg xmlns="http://www.w3.org/2000/svg" width="35" height="35" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+        <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5m0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5"/>
+        </svg>
+    </span>
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body bg-light-gray">
+        <ul class="list-unstyled d-flex flex-column justify-content-start gap-3">
+            <a class="text-decoration-none" href=""><li style="color: #359c8d;" class="fw-bold">خانه</li></a>
+            <a class="text-decoration-none" href=""><li>اخبار</li></a>            
+            <a class="text-decoration-none" href=""></a><li>چند رسانه ای</li>
+             <a class="text-decoration-none" href=""></a><li>گزارش آماری</li>
+            <a class="text-decoration-none" href=""></a><li class="fw-bold">ورود | ثبت نام</li>
+        </ul>
+      </div>
+      
+    </div>
+  </div>
+</div>
+</div>
 
 
-        <div>
-            <button class="head-button-1">نسخه آزمایشی جستجو</button>
-            <button class="head-button-2">ورود | ثبت نام</button>
-            <button class="head-button-2">#</button>
+        <div class="d-flex gap-1 flex-row">
+            <div><button class="head-button-1">نسخه آزمایشی جستجو</button></div>
+            <div class="d-flex gap-1"><button class="head-button-2 bg-light-gray-2">ورود | ثبت نام</button>
+            <button class="head-button-2 bg-light-gray-2">
+                <svg xmlns="http://www.w3.org/2000/svg" width="22" height="22" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                </svg>
+            </button></div>
         </div>
     </header>
+
+
+
     <div class="container d-flex flex-row justify-content-between align-items-center mt-5">
         <div class="row">
             <div class="col-lg-8 mb-4">
@@ -79,7 +124,7 @@
             </div>
             <div class="">
                 <a href="https://adabiat.ketab.ir/">
-                <img class="w-100" src="assets/images/payegahdastan.jpg" alt="payegahdastan" style="margin-bottom: 1rem;>
+                <img class="w-100" src="assets/images/payegahdastan.jpg" alt="payegahdastan" style="margin-bottom: 1rem">
                 </a>
             </div>
             <div class="">
@@ -91,11 +136,15 @@
         </div>
         </div>
     </div>
-    <div class="serch-box mt-4 d-flex flex-column align-items-center justify-content-center">
+    <div class="serch-box mt-4 d-flex flex-column align-items-center justify-content-center w-100">
         <h3 class="text-light">جستجو در بانک جامع اطلاعات کتابو ناشران</h3>
         <div class="input-group mb-3 w-75">
             <input type="text" class="form-control" aria-label="Example text with button addon" aria-describedby="button-addon1" placeholder="جستجوی کتاب, ناشر,  پدید آور">
-            <button class=" serch-button" type="button" id="button-addon1">#</button>
+            <button class=" serch-button text-primary" type="button" id="button-addon1">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="20" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+                <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0"/>
+                </svg>
+            </button>
         </div>
         <p class="text-light fs-5 mt-3">برای یافتن ناشر، کتاب یا پدیدآور مورد نظر، همه یا قسمتی از عنوان را وارد کنید</p>
         <div class="d-flex flex-row justify-content-center align-items-center gap-2">
@@ -187,10 +236,36 @@
             </div>
         </div>
 
-        <div class="row gap-2">
-            <div class="card col-md py-2 rounded-4">
+        <div class="row gap-2 mt-2">
+            <div class="card col-md py-2 rounded-4 shadow">
                 <div class="card-img img-box d-flex justify-content-center rounded-4">
-                    <img src="assets/images/sonatt.jpeg" class="w-50" alt="...">
+                    <img src="assets/images/fateme-nanizad.jpg" class="scale-down" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span class="card-text"><small class="text-body-secondary"><span>#</span>خبر</small></span>
+                        <span class="card-text"><small class="text-body-secondary">۱۴۰۴/۰۷/۱۳</small></span>
+                    </div>
+                    <p class="card-text mt-3">هفته کتاب به روایت شاعران/۲</p>
+                    <h5 class="card-title fs-6 fw-bold ">فاطمه نانی زاد: انتشار کتاب شع...</h5>
+                </div>
+            </div>
+            <div class="card col-md py-2 rounded-4 shadow">
+                <div class="card-img img-box d-flex justify-content-center rounded-4">
+                    <img src="assets/images/namayeshgah1.jpg" class="scale-down" alt="...">
+                </div>
+                <div class="card-body">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <span class="card-text"><small class="text-body-secondary"><span>#</span>خبر</small></span>
+                        <span class="card-text"><small class="text-body-secondary">۱۴۰۴/۰۷/۱۳</small></span>
+                    </div>
+                    <p class="card-text mt-3"></p>
+                    <h5 class="card-title fs-6 fw-bold ">هفتمین نمایشگاه بین‌المللی کتا...</h5>
+                </div>
+            </div>
+            <div class="card col-md py-2 rounded-4 shadow">
+                <div class="card-img img-box d-flex justify-content-center rounded-4">
+                    <img src="assets/images/sonatt.jpeg" class="scale-down" alt="...">
                 </div>
                 <div class="card-body">
                     <div class="d-flex justify-content-between align-items-center">
@@ -201,48 +276,111 @@
                     <h5 class="card-title fs-6 fw-bold">طلوعی تازه برای کتاب و فرهنگ؛ ...</h5>
                 </div>
             </div>
-            <div class="card col-md py-2 rounded-4">
-                <div class="card-img img-box d-flex justify-content-center rounded-4">
-                    <img src="assets/images/sonatt.jpeg" class="w-50" alt="...">
-                </div>
-                <div class="card-body">
-                    <div class="d-flex justify-content-between align-items-center">
-                        <span class="card-text"><small class="text-body-secondary"><span>#</span>خبر</small></span>
-                        <span class="card-text"><small class="text-body-secondary">۱۴۰۴/۰۷/۱۳</small></span>
-                    </div>
-                    <p class="card-text mt-3">روایت یک سنت؛ هفته کتاب در آیینه زمان/ ۵</p>
-                    <h5 class="card-title fs-6 fw-bold">طلوعی تازه برای کتاب و فرهنگ؛ ...</h5>
-                </div>
-            </div>
-            <div class="card col-md py-2 rounded-4">
-                <div class="card-img img-box d-flex justify-content-center rounded-4">
-                    <img src="assets/images/sonatt.jpeg" class="w-50" alt="...">
-                </div>
-                <div class="card-body">
-                    <div class="d-flex justify-content-between align-items-center">
-                        <span class="card-text"><small class="text-body-secondary"><span>#</span>خبر</small></span>
-                        <span class="card-text"><small class="text-body-secondary">۱۴۰۴/۰۷/۱۳</small></span>
-                    </div>
-                    <p class="card-text mt-3">روایت یک سنت؛ هفته کتاب در آیینه زمان/ ۵</p>
-                    <h5 class="card-title fs-6 fw-bold">طلوعی تازه برای کتاب و فرهنگ؛ ...</h5>
-                </div>
-            </div>
-            <div class="card col-md py-2 rounded-4">
+            <div class="card col-md py-2 rounded-4 shadow">
                 <div class="card-img img-box d-flex justify-content-center bg-light-gray rounded-4">
-                    <img src="assets/images/sonatt.jpeg" class="w-50" alt="...">
+                    <img src="assets/images/hosein-ebrahimi.jpg" class="scale-down" alt="...">
                 </div>
                 <div class="card-body">
                     <div class="d-flex justify-content-between align-items-center">
                         <span class="card-text"><small class="text-body-secondary"><span>#</span>خبر</small></span>
                         <span class="card-text"><small class="text-body-secondary">۱۴۰۴/۰۷/۱۳</small></span>
                     </div>
-                    <p class="card-text mt-3">روایت یک سنت؛ هفته کتاب در آیینه زمان/ ۵</p>
-                    <h5 class="card-title fs-6 fw-bold">طلوعی تازه برای کتاب و فرهنگ؛ ...</h5>
+                    <p class="card-text mt-3"></p>
+                    <h5 class="card-title fs-6 fw-bold">«قرار با ستاره‌ها» به عصر حسین...</h5>
                 </div>
             </div>
         </div>
+        <a class="more-information" href="">مشاهده همه</a>
 
+        <h3 class="text-dark fs-4 fw-bold mt-5">گزارش تصویری</h3>
+        <div class="row gap-0 p-0 mt-4 rounded-4 border-main">
+            <div class="col-lg-3 px-0 report"><a href=""><img class="object-fit-cover w-100 h-100 report-img" src="assets/images/namayeshgah2.jpg" alt=""></a></div>
+            <div class="col-lg-3 px-0 report"><a href=""><img class="object-fit-cover w-100 h-100 report-img" src="assets/images/sarayeahlghalam.jpg" alt=""></a></div>
+            <div class="col-lg-3 px-0 report"><a href=""><img class="object-fit-cover w-100 h-100 report-img" src="assets/images/mahregan.jpg" alt=""></a></div>
+            <div class="col-lg-3 px-0 report"><a href=""><img class="object-fit-cover w-100 h-100 report-img" src="assets/images/kimiyayemehr.jpg" alt=""></a></div>
+            <div class="col-lg-3 px-0 report"><a href=""><img class="object-fit-cover w-100 h-100 report-img" src="assets/images/namayeshgah3.jpg" alt=""></a></div>
+            <div class="col-lg-3 px-0 report"><a href=""><img class="object-fit-cover w-100 h-100 report-img" src="assets/images/bazaryabi.jpg" alt=""></a></div>
+            <div class="col-lg-3 px-0 report"><a href=""><img class="object-fit-cover w-100 h-100 report-img" src="assets/images/neshast-hamkar.jpg" alt=""></a></div>
+            <div class="col-lg-3 px-0 report"><a href=""><img class="object-fit-cover w-100 h-100 report-img" src="assets/images/12-0-3.jpg" alt=""></a></div>
+        </div>
+        <a class="more-information" href="">مشاهده همه</a>
+
+       
     </main>
+     <div class="numbers-section mt-5 w-100">
+        <div class="container">
+            <div class="row d-flex gap-3">
+                <div class="col-lg d-flex flex-column justify-content-center align-items-center border2 p-3">
+                <span class="text-light">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-pencil-fill" viewBox="0 0 16 16">
+                    <path d="M12.854.146a.5.5 0 0 0-.707 0L10.5 1.793 14.207 5.5l1.647-1.646a.5.5 0 0 0 0-.708zm.646 6.061L9.793 2.5 3.293 9H3.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.207zm-7.468 7.468A.5.5 0 0 1 6 13.5V13h-.5a.5.5 0 0 1-.5-.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.5-.5V10h-.5a.5.5 0 0 1-.175-.032l-.179.178a.5.5 0 0 0-.11.168l-2 5a.5.5 0 0 0 .65.65l5-2a.5.5 0 0 0 .168-.11z"/>
+                    </svg>
+                </span>
+                <p class="text-light fs-4 fw-bold">35841</p>
+                <p class="text-light">پدیدآور عضو اهل قلم</p>
+            </div>
+            <div class="col-lg d-flex flex-column justify-content-center align-items-center border2 p-3">
+                <span class="text-light">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-people-fill" viewBox="0 0 16 16">
+                    <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6m-5.784 6A2.24 2.24 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.3 6.3 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1zM4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5"/>
+                    </svg>
+                </span>
+                <p class="text-light fs-4 fw-bold">15770</p>
+                <p class="text-light">ناشر و عضو شابک</p>
+            </div>
+            <div class="col-lg d-flex flex-column justify-content-center align-items-center border2 p-3">
+                <span class="text-light">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-book" viewBox="0 0 16 16">
+                    <path d="M1 2.828c.885-.37 2.154-.769 3.388-.893 1.33-.134 2.458.063 3.112.752v9.746c-.935-.53-2.12-.603-3.213-.493-1.18.12-2.37.461-3.287.811zm7.5-.141c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783"/>
+                    </svg>
+                </span>
+                <p class="text-light fs-4 fw-bold">2041295</p>
+                <p class="text-light">کتاب های ثبت شده</p>
+            </div>
+            <div class="col-lg d-flex flex-column justify-content-center align-items-center border2 p-3">
+                <span class="text-light">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-envelope-fill" viewBox="0 0 16 16">
+                    <path d="M.05 3.555A2 2 0 0 1 2 2h12a2 2 0 0 1 1.95 1.555L8 8.414zM0 4.697v7.104l5.803-3.558zM6.761 8.83l-6.57 4.027A2 2 0 0 0 2 14h12a2 2 0 0 0 1.808-1.144l-6.57-4.027L8 9.586zm3.436-.586L16 11.801V4.697z"/>
+                    </svg>
+                </span>
+                <p class="text-light fs-4 fw-bold">5397</p>
+                <p class="text-light">عضو پست کتاب</p>
+            </div>
+            </div>
+        </div>
+            
+        </div>
+
+        <div class="container">
+            <div class="row d-flex flex-row justify-content-center align-items-center p-5">
+            
+                <div class="col-6 col-lg d-flex flex-column justify-content-center align-items-center"><a class="text-decoration-none" href="https://isbn.ketab.ir/">
+                    <img class="mb-3" src="assets/icons/isbn.png" alt="isbn">
+                    <p class="text-center text-color fw-bold">شابک</p>
+                </a></div>
+
+                <div class="col-6 col-lg d-flex flex-column justify-content-center align-items-center"><a class="text-decoration-none" href="https://ahleghalam.ketab.ir/">
+                    <img class="mb-3" src="assets/icons/ghalam.png" alt="ghalam">
+                    <p class="text-center text-color fw-bold">اهل قلم</p>
+                </a></div>
+
+                <div class="col-6 col-lg d-flex flex-column justify-content-center align-items-center"><a class="text-decoration-none" href="https://book.icfi.ir/">
+                    <img class="mb-3" src="assets/icons/book.png" alt="book">
+                    <p class="text-center text-color fw-bold">نمایشگاه کتاب</p>
+                </a></div>
+
+               <div class="col-6 col-lg d-flex flex-column justify-content-center align-items-center"> <a class="text-decoration-none" href="https://bazarketab.ir/">
+                    <img class="mb-3" src="assets/icons/shop.png" alt="shop">
+                    <p class="text-center text-color fw-bold">بازار کتاب</p>
+                </a></div>
+
+                <div class="col-6 col-lg d-flex flex-column justify-content-center align-items-center"><a class="text-decoration-none" href="https://ketabsal.ketab.ir/">
+                    <img class="mb-3" src="assets/icons/year.png" alt="year">
+                    <p class="text-center text-color fw-bold">کتاب سال</p>
+                </a></div>
+            
+        </div>
+        </div>
     <footer></footer>
 
 
