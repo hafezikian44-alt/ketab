@@ -19,19 +19,25 @@ header {
     width: 12rem;
     height: 5rem;
 }
+.logo-img-footer {
+    width: 14rem;
+    height: 8rem;
+}
 .head-button-1 {
     background-color: #359c8d;
     color: #fff;
     border: 2px solid #359c8d;
     border-radius: 6px;
     padding: 6px;
+    font-size: 12px;
 }
 .head-button-2 {
     background-color: #fff;
     color: #359c8d;
-    border: 2px solid #359c8d;
+    border: 1px solid #359c8d;
     border-radius: 6px;
     padding: 6px;
+    font-size: 12px;
 }
 .head-button-2:hover {
     background-color: #359c8d;
@@ -103,12 +109,25 @@ header {
 .text-color {
     color: #359c8d;
 }
-
-
-
-
-
-
+footer {
+    background-color: #cccccc;
+    padding-top: 2rem;
+}
+.footer-button {
+    width: 3.5rem;
+    height: 3.5rem;
+    border: 2px solid #358d80;
+    color: #358d80;
+    background-color: #cccccc;
+    border-radius: 3px;
+}
+.footer-button:hover {
+    background-color: #358d80;
+    color: #fff;
+}
+.enamad {
+    width: 10rem;
+}
 @media (max-width: 992px) {
     .report {
         height: 10rem;
@@ -116,9 +135,23 @@ header {
     .report-img {
         height: 100%;
     }
+    .text-align-center {
+        text-align: center;
+    }
+    .align-center {
+        margin: ;
+    }
+    .logo-img-footer {
+        width: 18rem;
+        height: 8rem;
+    }
 }
 @media (max-width: 576px) {
     .wraping {
         flex-wrap: wrap;
+    }
+    .logo-img-footer {
+        width: 10rem;
+        height: 8rem;
     }
 }
